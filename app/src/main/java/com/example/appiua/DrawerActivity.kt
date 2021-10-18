@@ -33,7 +33,7 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
         //val navView: NavigationView = findViewById(R.id.nav_view)
         //val navController: NavController = findNavController(R.id.nav_controller_view_tag)
-        
+
         drawer = findViewById(R.id.drawer_layout)
 
         toggle = ActionBarDrawerToggle(this,drawer,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close)
