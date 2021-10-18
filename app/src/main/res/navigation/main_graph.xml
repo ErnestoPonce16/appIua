@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_homeFragment_to_favoritFragment"
             app:destination="@id/favoritFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoritFragment"
         android:name="com.example.appiua.FavoritFragment"
         android:label="fragment_favorit"
         tools:layout="@layout/fragment_favorit" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.appiua.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

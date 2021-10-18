@@ -54,9 +54,11 @@ class DrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
     private fun selectItemnav(item: MenuItem) {
         when(item.itemId){
-            R.id.nav_item_one ->Toast.makeText(this,"Item 2", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_two ->Toast.makeText(this,"Item 2", Toast.LENGTH_SHORT).show()
+            R.id.nav_item_one ->{findNavController(R.id.nav_host_fragment).navigate(R.id.homeFragment)}
+            R.id.nav_item_two ->{findNavController(R.id.nav_host_fragment).navigate(R.id.favoritFragment)}
             R.id.nav_item_three ->Toast.makeText(this,"Item 3", Toast.LENGTH_SHORT).show()
+            R.id.nav_item_four ->{findNavController(R.id.nav_host_fragment).navigate(R.id.editProfileFragment)}
+            R.id.nav_item_five ->{findNavController(R.id.nav_host_fragment).navigate(R.id.btnScanner)}
 
 
         }
